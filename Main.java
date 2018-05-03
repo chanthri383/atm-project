@@ -72,6 +72,8 @@ public class Main implements ActionListener {
                                      string accountNumber = accountInfoTextField.getText();
                                      string password = passwordTextField.getText();
 
+                                     checkDatabase(accountNumber, password);
+                                     
                                      f = new JFrame();
                                      f.setVisible(true);
                                      f.setSize(600, 400);
