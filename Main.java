@@ -18,8 +18,6 @@ public class Main implements ActionListener {
     private Scanner scanFile, scanFileForAccountInfo;
 
 
-
-
     public Main()
     {
       gui();
@@ -145,6 +143,10 @@ public class Main implements ActionListener {
     public static void main(String[] args) {
 
         new Main();
+
+        Files file = new Files();
+        file.File();
+        file.File_();
 
     }
 
