@@ -58,9 +58,19 @@ public class Main implements ActionListener {
             }
         });
 
+        
+        accountInfoLabel = new JLabel("Account Number:");
+        passwordLabel = new JLabel("Password:");
+
+        accountInfoTextField = new JTextField(25);
+        passwordTextField = new JPasswordField(25);
+        
         b1.addActionListener(new ActionListener() {
                                  @Override
                                  public void actionPerformed(ActionEvent e) {
+                                     
+                                     string accountNumber = accountInfoTextField.getText();
+                                     string password = passwordTextField.getText();
 
                                      f = new JFrame();
                                      f.setVisible(true);
@@ -105,12 +115,6 @@ public class Main implements ActionListener {
                                  }
                              }
         );
-
-        accountInfoLabel = new JLabel("Account Number:");
-        passwordLabel = new JLabel("Password:");
-
-        accountInfoTextField = new JTextField(25);
-        passwordTextField = new JPasswordField(25);
 
         g.insets = new Insets(10, 10, 10, 10);
         g.gridx = 0;
