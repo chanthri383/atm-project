@@ -147,6 +147,10 @@ public class Main implements ActionListener {
        public void checkDatabase(String accountNumber, String password)
        {
            
+           // 1. load Password.txt with scanner and get the username that's on the same line as the password
+           // 2. make sure that the username and password match the ones in password.txt
+           // 3. load AccountInfo.txt with scanner and find the username
+           // 4. get the next 4 lines and save them as variables to work with later
        }
     }
 
