@@ -146,8 +146,20 @@ public class Main implements ActionListener {
         f.add(p);
        public void checkDatabase(String accountNumber, String password)
        {
-           File file = new File("Password.txt");
-           Scanner scanFile = new Scanner(file);
+           File file = new File("Password.txt");           
+            try {
+
+            input = new Scanner(file);
+
+            while (input.hasNextLine()) {
+                String line = input.nextLine();
+                System.out.println(line);
+            }
+            input.close();
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
            // 1. load Password.txt with scanner and get the username that's on the same line as the password
            // 2. make sure that the username and password match the ones in password.txt
            // 3. load AccountInfo.txt with scanner and find the username
@@ -156,8 +168,6 @@ public class Main implements ActionListener {
     }
 
     public static void main(String[] args) {
-
-        new Main();
 
         Files file = new Files();
         file.File();
