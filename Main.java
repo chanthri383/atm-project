@@ -142,6 +142,10 @@ public class Main implements ActionListener {
         p.add(b8, g);
 
         f.add(p);
+       public void checkDatabase(String accountNumber, String password)
+       {
+           
+       }
     }
 
     public static void main(String[] args) {
