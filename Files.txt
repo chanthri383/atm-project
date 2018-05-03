@@ -1,0 +1,57 @@
+package com.company;
+
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.*;
+
+public class Files {
+    public void File() {
+        try { //PasswordTextfile
+            File file = new File("Password.txt");
+            Scanner scanFile = new Scanner(new File("password.txt"));
+
+            if (!file.exists()) {
+
+                file.createNewFile();
+            }
+            PrintWriter pw = new PrintWriter(file);
+
+            pw.print("111155559");
+            pw.print(" ");
+            pw.print("OurSaviorHarambe");
+
+            pw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public void File_() {
+        try //AccountInformationTextfile
+        {
+            File file_ = new File("AccountInformation.txt");
+
+            if (!file_.exists()) {
+
+                file_.createNewFile();
+            }
+            PrintWriter pw_ = new PrintWriter(file_);
+
+            pw_.println("111155559");
+            pw_.println("Wills");
+            pw_.println("Chris");
+            pw_.println("3000");
+            pw_.println("Active");
+
+            pw_.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+
+
+}
